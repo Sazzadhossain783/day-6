@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+    .div-one{
+        height: 600px;
+        width: 900px;
+        background-color: green;
+        position: relative;
+        margin-top: 20px;
+
+    }
+        .div-two
+        {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            position: absolute;
+            right: 300px;
+            top: 100px;
+            border-radius: 50%;
+        }
+
+        .div-three{
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            border:1px solid red;
+            transition: 1s;
+            margin: 150px;
+            /*transform: scale(1);*/
+            /*transform: scale3d(1,1,1);*/
+            /*transform:rotateX(0deg);*/
+            transform: skew(0deg);
+
+        }
+        .div-three:hover{
+            /*border-radius: 150px;*/
+            /*transform: scale(1.5);*/
+            /*transform: scale3d(1.5,1.5,1.5);*/
+            /*transform:rotateX(360deg);*/
+            transform: skew(45deg);
+        }
+
+        .one{
+            height: 300px;
+            width: 50px;
+            background-color: red;
+            transform: skew(-30deg);
+            float: left;
+        }
+
+        .div-box{
+            margin-left: 150px;
+            position: relative;
+        }
+
+    .two{
+        height: 300px;
+        width: 50px;
+        background-color: red;
+        transform: skew(30deg);
+        float: left;
+        margin-left: 150px;
+    }
+
+    .three{
+            height: 20px;
+            width: 250px;
+            background-color:red;
+            margin-top: 150px;
+            transform: skewX(30deg);
+            position: absolute;
+            top: 0px;
+        margin-left: 5px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="div-box">
+<div class="one"></div>
+</div>
+
+<div class="div-box">
+<div class="two"></div>
+</div>
+
+<div class="div-box">
+    <div class="three"></div>
+</div>
+</body>
+</html>
